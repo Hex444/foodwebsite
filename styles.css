@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&family=Readex+Pro:wght@600&display=swap');
+/* 1:02:05 */
+/* CSS Reset */
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    /* font-family: ; */
+}
+
+/* vars */
+:root {
+    --nav-height: 100px;
+}
+
+/* 
+
+
+
+nav bar
+
+
+
+*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* logo and img */
+.logo img {
+    margin: 2px 2px;
+    height: 57px;
+    width: 61px;
+}
+
+/* lists */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Home section */
+.home::before {
+    content: "";
+    position: absolute;
+    background: url(/my-first-website/foodwebsite/photos/backgrounds/vegetables-752153__340.webp) no-repeat center center;
+    background-size: 150.5rem;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+}
+.home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.btn { 
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    margin: 17px 10px;
+    cursor: pointer;
+}
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.center {
+    text-align: center;
+}
+.h-secondary {
+    font-size: 2.3rem;
+}
+
+/* services */
+#services {
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: bisque;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: rgb(36, 36, 36);
+}
+#services .box p{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#services .box img{
+    height: 250px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/* imaginary sponsors */
+#client-section {
+    height: 344px;
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../foodwebsite/photos/backgrounds/vegetables-752153__340.webp');
+    width: 100%;
+    z-index: -1;
+    background-size: 100rem;
+    opacity: 0.4;
+    height: 350px;
+}
+div#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#clients img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10rem;
+}
+.client-item {
+    padding: 34px;
+}
