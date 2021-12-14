@@ -73,7 +73,7 @@ nav bar
 #home::before {
     content: "";
     position: absolute;
-    background: url(/my-first-website/foodwebsite/photos/backgrounds/vegetables-752153__340.webp) no-repeat center center;
+    background: url(photos/backgrounds/vegetables-752153__340.webp) no-repeat center center;
     background-size: 150.5rem;
     height: 900px;
     width: 100%;
